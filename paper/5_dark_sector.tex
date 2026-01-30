@@ -4,18 +4,27 @@ The $E_8$ framework provides a physical identity for the dark components of the 
 \paragraph{Dark Energy as Entropic Exhaust}
 The vacuum energy ($\rho_{vac}$) was derived in Paper I as the thermal noise floor of the lattice. The Lattice Load Factor $\mathcal{L}$ implies that this energy is not constant. Because the lattice load changes as the universe evolves from radiation- to matter-dominated, the entropic exhaust must also change. This predicts a \textbf{time-varying equation of state for Dark Energy, $w(z)$}, deviating from $w=-1$, a key prediction for upcoming surveys like DESI and Euclid.
 
+\CatchFileBetweenTags{\OmegaRatioVal}{calculations/cosmology.tex}{OmegaRatioVal}
+\CatchFileBetweenTags{\OmegaRatioExperimentalValue}{calculations/cosmology.tex}{OmegaRatioExperimentalValue}
+\CatchFileBetweenTags{\OmegaRatioSigma}{calculations/cosmology.tex}{OmegaRatioSigma}
+
 \paragraph{Dark Matter as Geometric Mass}
 Dark Matter is not a new particle but is identified as the \textbf{Mirror Sector} of the $E_8$ lattice—the geometric degrees of freedom that are orthogonal to the 4D spacetime projection and therefore topologically unable to couple to the Standard Model forces. Rather than consisting of independent particles, this sector acts as the "geometric mass" of the vacuum substrate itself. Its abundance is determined by the ratio of total hardware capacity to active software states: the full 248 dimensions of the $E_8$ Lie algebra versus the 48 chiral channels ($3 \times 16$) occupied by the Standard Model fermions.
 
 \begin{equation}
 \frac{\Omega_{DM}}{\Omega_b} = \frac{\text{Total Capacity}}{\text{Active Capacity}} = \frac{248}{48} \approx 5.167
 \end{equation}
-Applying thermodynamic corrections for binding and charge (as derived in Paper II) refines this ratio to $\mathbf{5.378}$, matching the Planck 2018 value of $5.36 \pm 0.05$ to 99.6% accuracy. This model predicts a null result for all particle-based dark matter searches.
+Applying thermodynamic corrections for binding and charge (as derived in Paper II) refines this ratio to $\mathbf{\OmegaRatioVal}$, matching the Planck 2018 value of \OmegaRatioExperimentalValue to \OmegaRatioSigma $\sigma$
+
+This model predicts a null result for all particle-based dark matter searches.
+
+\CatchFileBetweenTags{\MnuRestVal}{calculations/cosmology.tex}{MnuRestVal}
+\CatchFileBetweenTags{\MnuWeakVal}{calculations/cosmology.tex}{MnuWeakVal}
 
 \paragraph{The Neutrino Mass Paradox}
 We resolve the tension between cosmological mass limits ($\Sigma m_\nu < 0.12$ eV) and oscillation data ($\Sigma m_\nu \ge 0.06$ eV) via the ``Context-Dependent Mass" operator derived in Paper II.
 \begin{itemize}
-    \item \textbf{Gravitational Rest Mass ($M_{rest}$):} In the decoupled vacuum of cosmology, neutrinos are pure lattice phonons. Their mass follows the inverse resonance hierarchy, summing to $\mathbf{\Sigma m_\nu \approx 9.4}$ \textbf{meV}. This is the value cosmology measures.
-    \item \textbf{Interaction Mass ($M_{weak}$):} In terrestrial experiments, neutrinos are coupled to the weak force. Their mass is enhanced by the refractive index of the gauge field ($\eta_W = 6$), yielding an effective mass of $\mathbf{\sim 55}$ \textbf{meV}. This is the value oscillation experiments measure.
+    \item \textbf{Gravitational Rest Mass ($M_{rest}$):} In the decoupled vacuum of cosmology, neutrinos are pure lattice phonons. Their mass follows the inverse resonance hierarchy, summing to $\mathbf{\Sigma m_\nu \approx \MnuRestVal}$ \textbf{meV}. This is the value cosmology measures.
+    \item \textbf{Interaction Mass ($M_{weak}$):} In terrestrial experiments, neutrinos are coupled to the weak force. Their mass is enhanced by the refractive index of the gauge field ($\eta_W = 6$), yielding an effective mass of $\mathbf{\sim \MnuWeakVal}$ \textbf{meV}. This is the value oscillation experiments measure.
 \end{itemize}
 This framework predicts that Euclid will measure a neutrino mass sum consistent with the light rest mass, falsifying the standard interpretation.

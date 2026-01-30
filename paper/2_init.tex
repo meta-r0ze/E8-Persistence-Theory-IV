@@ -1,3 +1,8 @@
+\CatchFileBetweenTags{\SpectralIndexVal}{calculations/cosmology.tex}{SpectralIndexVal}
+\CatchFileBetweenTags{\SpectralIndexEq}{calculations/cosmology.tex}{SpectralIndexEq}
+\CatchFileBetweenTags{\SpectralIndexExperimentalValue}{calculations/cosmology.tex}{SpectralIndexExperimentalValue}
+\CatchFileBetweenTags{\SpectralIndexAccText}{calculations/cosmology.tex}{SpectralIndexAccText}
+
 \section{The Primordial Universe: Geometric Initialization and Inflation}
 Standard cosmology posits an ad-hoc ``inflation field" to explain the flatness and horizon problems. In our framework, inflation is not driven by a new field, but is the \textbf{geometric phase transition} of the lattice itself as it initializes its causal structure.
 
@@ -5,11 +10,13 @@ Standard cosmology posits an ad-hoc ``inflation field" to explain the flatness a
 As established in Paper I, the primordial $E_8$ substrate possesses a total symmetric capacity of $N=32$ degrees of freedom, allowing for bidirectional information flow. To establish a causal Arrow of Time, the Persistence Principle forces a \textbf{Chiral Truncation}, reducing the active state space to the chiral sector of $\nu=16$ channels. This transition is inflation: the propagation of the coordination signal that establishes the causal grid of the universe. This geometric mechanism sets the primordial boundary conditions.
 
 \subsection{The Spectral Index (\texorpdfstring{$n_s$}{ns}): Quantization Noise}
-The spectral index $n_s$ measures the deviation from perfect scale-invariance ($n_s=1$). A continuous vacuum would be perfectly scale-invariant. However, the $E_8$ lattice is discrete, with its primordial state space defined by $N=32$. The projection of this discrete grid onto a continuous manifold is inherently lossy, generating \textbf{Quantization Noise} ($S_Q$). The spectral index is simply the unitary fidelity of the projection minus this noise floor.
+The spectral index $n_s$ measures the deviation from perfect scale-invariance ($n_s=1$). A continuous vacuum would be perfectly scale-invariant. However, the $E_8$ lattice is discrete, with its primordial state space defined by $N=2\nu \space (32)$. The projection of this discrete grid onto a continuous manifold is inherently lossy, generating \textbf{Quantization Noise} ($S_Q$). The spectral index is simply the unitary fidelity of the projection minus this noise floor.
+
 \begin{equation}
-n_s = 1 - S_Q = 1 - \frac{1}{N} = 1 - \frac{1}{32} = \mathbf{0.96875}
+n_s = 1 - S_Q = \SpectralIndexEq = 1 - \frac{1}{32} = \mathbf{\SpectralIndexVal}
 \end{equation}
-This geometric prediction of $n_s \approx 0.9688$ lies within the $1\sigma$ confidence interval of the Planck 2018 measurement ($0.9649 \pm 0.0042$), identifying the ``red tilt" of the primordial spectrum as the digital quantization noise of the underlying 32-channel hardware.
+
+Experimental value: $\SpectralIndexExperimentalValue$. This geometric prediction of $n_s = \SpectralIndexVal$ \SpectralIndexAccText.  This identifying the ``red tilt" of the primordial spectrum as the digital quantization noise of the underlying 32-channel hardware.
 
 \subsection{Tensor Modes (\texorpdfstring{$r$}{r}): The Gravity Prohibition}
 The tensor-to-scalar ratio $r$ measures the amplitude of primordial gravitational waves. In this framework, gravity is not a fundamental force, but an emergent phenomenon caused by the ``load" of massive topological knots on the lattice (as derived in Paper I, System VI). During the inflationary epoch, the universe is a pure scalar field expansion; topological knots (matter) have not yet condensed. With zero structural load on the lattice, the source term for gravitational waves vanishes.
@@ -17,6 +24,11 @@ The tensor-to-scalar ratio $r$ measures the amplitude of primordial gravitationa
 r \equiv 0 \quad \text{(No Lattice Load)}
 \end{equation}
 This theory predicts a null result for all searches for primordial tensor modes. Future experiments like CMB-S4 and LiteBIRD will serve as a hard falsification test for this prediction against standard inflationary models.
+
+\CatchFileBetweenTags{\EtaBaryonVal}{calculations/cosmology.tex}{EtaBaryonVal}
+\CatchFileBetweenTags{\EtaBaryonEq}{calculations/cosmology.tex}{EtaBaryonEq}
+\CatchFileBetweenTags{\EtaBaryonExperimentalValue}{calculations/cosmology.tex}{EtaBaryonExperimentalValue}
+\CatchFileBetweenTags{\EtaBaryonAccText}{calculations/cosmology.tex}{EtaBaryonAccText}
 
 \subsection{The Origin of Matter: Baryogenesis and the Baryon-to-Photon Ratio (\texorpdfstring{$\eta$}{eta})}
 Standard cosmology accepts the observed matter-antimatter asymmetry as an initial condition. Our framework derives this ratio, $\eta$, as a direct geometric consequence of the causal initialization sequence.
@@ -42,10 +54,18 @@ The final baryon-to-photon ratio is the product of the initial bit bias and the 
     \end{equation}
 \end{enumerate}
 The final ratio is the product of these two factors:
+
 \begin{equation}
-\eta = \epsilon \cdot \zeta = (1.925 \times 10^{-6}) \times (3.15 \times 10^{-4}) \approx \mathbf{6.06 \times 10^{-10}}
+\eta = \epsilon \cdot \zeta = (1.925 \times 10^{-6}) \times (3.15 \times 10^{-4}) \approx \mathbf{\EtaBaryonVal}
 \end{equation}
-This geometric prediction matches the Planck 2018 value of $\eta = (6.12 \pm 0.04) \times 10^{-10}$ to within 1%, providing a first-principles derivation for the existence of matter in the universe.
+
+Experimental Value: \EtaBaryonExperimentalValue
+This geometric prediction \EtaBaryonAccText
+
+
+\CatchFileBetweenTags{\zeqVal}{calculations/cosmology.tex}{zeqVal}
+\CatchFileBetweenTags{\zeqExperimentalValue}{calculations/cosmology.tex}{zeqExperimentalValue}
+\CatchFileBetweenTags{\zeqAccText}{calculations/cosmology.tex}{zeqAccText}
 
 \subsection{Matter-Radiation Equality (\texorpdfstring{$z_{eq}$}{zeq})}
 The redshift of matter-radiation equality, $z_{eq}$, marks the epoch where the energy density of matter (structural knots) equals that of radiation (lattice vibrations). In our framework, this is the geometric crossover point where the universe's \textbf{Structural Load} overcomes its \textbf{Resonant Signal}. We derive this scale as the product of the radiation geometry and the matter capacity.
@@ -55,9 +75,12 @@ The redshift of matter-radiation equality, $z_{eq}$, marks the epoch where the e
 \end{enumerate}
 The equality redshift is the product of these two factors, representing the expansion required to dilute the structural density to match the resonant background.
 \begin{equation}
-z_{eq} = (\pi \Delta) \times (H_{sys} + \chi) = 135.088 \times 25 = \mathbf{3377.2}
+z_{eq} = (\pi \Delta) \times (H_{sys} + \chi) = 135.088 \times 25 = \mathbf{\zeqVal}
 \end{equation}
-This geometric prediction matches the Planck 2018 value of $z_{eq} = 3387 \pm 21$ to within 99.7\% ($0.5\sigma$), confirming the geometric origins of this key cosmological milestone.
+Experimental Value: \zeqExperimentalValue
+This geometric prediction \zeqAccText
+
+
 
 
 \section{The Unloaded Universe: The Base Cosmological Rate}
@@ -68,6 +91,10 @@ The expansion rate of this early universe ($H_0^{early}$) represents the ``idle 
 H_0^{early} \propto \frac{H_{sys}}{\Delta} = \frac{\nu + \sigma + \chi}{\Delta} = \frac{23}{43}
 \end{equation}
 This geometric ratio, when scaled to cosmological units, corresponds to the Planck 2018 measurement of $H_0 \approx \mathbf{67.4 \pm 0.5}$ km/s/Mpc. This value represents the fundamental, unloaded expansion rate of the vacuum substrate.
+
+
+\CatchFileBetweenTags{\LoadFactorVal}{calculations/cosmology.tex}{LoadFactorVal}
+\CatchFileBetweenTags{\LoadFactorEq}{calculations/cosmology.tex}{LoadFactorEq}
 
 \section{The Loaded Universe: Derivation of the Lattice Load Factor}
 The late universe is dominated by matter—heavy topological knots ($\Delta^2, \Delta^3$) that place a significant structural load on the vacuum. To maintain causal coherence under this load, the lattice must increase its effective update frequency. This speed-up is quantified by the \textbf{Lattice Load Factor ($\mathcal{L}$)}. We derive $\mathcal{L}$ from two independent, orthogonal stress terms.
@@ -86,5 +113,5 @@ The late universe is dominated by matter—heavy topological knots ($\Delta^2, \
 
 These stresses are geometrically orthogonal—one acts on the discrete channel count, the other on the continuous manifold curvature—and therefore sum linearly. The total load factor is the unitary baseline plus these two overheads.
 \begin{equation}
-\mathcal{L} = 1 + S_Q + S_T = 1 + 0.03125 + 0.04651 = \mathbf{1.07776}
+\mathcal{L} = 1 + S_Q + S_T = 1 + 0.03125 + 0.04651 = \mathbf{\LoadFactorVal} \\
 \end{equation}

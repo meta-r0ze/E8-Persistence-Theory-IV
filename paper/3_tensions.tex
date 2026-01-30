@@ -1,12 +1,14 @@
 \section{Resolution of the Late-Universe Tensions}
 This single, parameter-free Lattice Load Factor simultaneously resolves the two primary tensions of modern cosmology.
 
+\CatchFileBetweenTags{\HubbleLateVal}{calculations/cosmology.tex}{HubbleLateVal}
+
 \subsection{The Hubble Tension (\texorpdfstring{$H_0$}{HO})}
 The late-universe expansion rate is the base rate accelerated by the load factor.
 \begin{equation}
 \begin{split}
 H_0^{late} &= H_0^{early} \times \mathcal{L} = (67.4 \text{ km/s/Mpc}) \times 1.07776 \\
-& \approx \mathbf{72.64 \text{ km/s/Mpc}}
+& \approx \mathbf{\HubbleLateVal}
 \end{split}
 \end{equation}
 The ``tension" is a direct measurement of the difference between the idle and loaded states of the vacuum.
@@ -19,15 +21,25 @@ The ``tension" is a direct measurement of the difference between the idle and lo
 \hline
 Planck 2018 (CMB) & $67.4 \pm 0.5$ & Unloaded Rate ($H_0^{early}$) \\
 SH0ES (Supernovae) & $73.0 \pm 1.0$ & Loaded Rate ($H_0^{late}$) \\
-\textbf{Geometric (Loaded)} & \textbf{72.64} & \textbf{Resolves Tension} \\
+\textbf{Geometric (Loaded)} & \textbf{72.641133} & \textbf{Resolves Tension} \\
 \hline
 \end{tabular}
 \end{table}
 
+\CatchFileBetweenTags{\SGeoVal}{calculations/cosmology.tex}{S8GeoVal}
+
+%<*S8GeoVal>0.77197033%</S8GeoVal>
+%<*S8GeoEq>S_8^{Planck} / \mathcal{L}%</S8GeoEq>
+%<*S8GeoExperimentalValue>\qty{0.776 \pm 0.017}{}~\cite{DES-Y3}%</S8GeoExperimentalValue>
+%<*S8GeoDiff>-4.03e-03%</S8GeoDiff>
+%<*S8GeoSigma>0.24%</S8GeoSigma>
+%<*S8GeoAccText>matches the experimental consensus to within $0.24\sigma$.%</S8GeoAccText>
+
+
 \subsection{The Clustering Tension (\texorpdfstring{$S_8$}{S8})}
 The accelerated expansion of the loaded lattice acts as a \textbf{Geometric Damping} force on the growth of cosmic structure. The observed late-universe clustering ($S_8^{obs}$) is the primordial value predicted by Planck ($S_8^{pred}$) suppressed by this expansion drag.
 \begin{equation}
-S_8^{obs} = \frac{S_8^{pred}}{\mathcal{L}} = \frac{0.832}{1.07776} \approx \mathbf{0.7719}
+S_8^{obs} = \frac{S_8^{pred}}{\mathcal{L}} = \frac{0.832}{1.07776} \approx \mathbf{\SGeoVal}
 \end{equation}
 This prediction lands squarely within the range measured by weak lensing surveys, resolving the tension with the CMB prediction.
 \begin{table}[h!]
@@ -39,7 +51,7 @@ This prediction lands squarely within the range measured by weak lensing surveys
 \hline
 Planck 2018 (CMB) & $0.832 \pm 0.013$ & Prediction (Undamped) \\
 DES Y3 / KiDS-1000 & $0.776 \pm 0.017$ & Observation (Damped) \\
-\textbf{Geometric (Damped)} & \textbf{0.772} & \textbf{Resolves Tension} \\
+\textbf{Geometric (Damped)} & \textbf{0.77197} & \textbf{Resolves Tension} \\
 \hline
 \end{tabular}
 \end{table}
